@@ -253,6 +253,10 @@ h3 {
 
 }
 
+.menu-link p {
+  margin: 0;
+}
+
 .menu-list {
   max-width: 1110px;
   padding: 0;
