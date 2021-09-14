@@ -37,6 +37,10 @@ body {
   padding: 0;
 }
 
+a, a:visited {
+  color: inherit;
+}
+
 .text-white {
   color: var(--white);
 }
@@ -144,6 +148,7 @@ h1,
 h2,
 h3 {
   line-height: 1.2em;
+  font-weight: normal;
   font-family: 'Neucha';
 }
 
@@ -370,4 +375,100 @@ h3 {
 
 .card-top .column:nth-child(1) {
   margin-right: 30px;
+}
+
+
+/* -----------------------------------Footer-------------------------------------------- */
+
+.subscription-to-updates {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 55px;
+  height: 190px;
+}
+
+.subscription-form {
+  margin-top: 9px;
+}
+
+.subscription-form > * {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.subscription-to-updates > * {
+  flex-basis: 50%;
+}
+
+.subscription-to-updates h3 {
+  margin: 55px 0;
+}
+
+input::placeholder {
+  color: #757575;
+
+  opacity: 0.2;
+}
+
+input {
+  flex-grow: 1;
+}
+
+.subscription-form input:focus {
+  outline: none;
+}
+
+.contacts {
+  font-size: 14px;
+  text-align: center;
+
+  margin-top: 60px;
+}
+
+#email {
+  height: 50px;
+  /* margin: 15px; */
+}
+
+.email-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.email-field label {
+  font-size: 18px;
+}
+
+.email-btn {
+  height: 50px;
+  width: 70px;
+  border: none;
+}
+
+.email-btn::before {
+  content: url(../images/send.svg);
+}
+
+.rules-of-service {
+  font-size: 12px;
+
+  margin: 0;
+}
+
+.rules-of-service a {
+  text-decoration: underline;
+}
+
+.contacts a {
+  text-decoration: underline;
+}
+
+footer form {
+  display: flex;
+}
+
+button {
+  background: #EA7600;
 }
